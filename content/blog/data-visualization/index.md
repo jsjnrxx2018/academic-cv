@@ -26,20 +26,12 @@ cover:
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
 ---
-
 Hugo Blox is designed to give technical content creators a seamless experience. You can focus on the content and Hugo Blox handles the rest.
 
 Use popular tools such as Plotly, Mermaid, and data frames.
 
 ## Embed Rich Content
 
-HuggingFace Model
-
-{{< embed platform="huggingface" resource="google/embeddinggemma-300m" type="model" >}}
-
-HuggingFace Dataset
-
-{{< embed platform="huggingface" resource="fka/awesome-chatgpt-prompts" type="dataset" >}}
 
 GitHub Repository
 
@@ -77,13 +69,7 @@ Hugo Blox supports the _Mermaid_ Markdown extension for diagrams.
 
 An example **flowchart**:
 
-    ```mermaid
-    graph TD
-    A[Hard] -->|Text| B(Round)
-    B --> C{Decision}
-    C -->|One| D[Result 1]
-    C -->|Two| E[Result 2]
-    ```
+    ``mermaid     graph TD     A[Hard] -->|Text| B(Round)     B --> C{Decision}     C -->|One| D[Result 1]     C -->|Two| E[Result 2]     ``
 
 renders as
 
@@ -97,17 +83,7 @@ C -->|Two| E[Result 2]
 
 An example **sequence diagram**:
 
-    ```mermaid
-    sequenceDiagram
-    Alice->>John: Hello John, how are you?
-    loop Healthcheck
-        John->>John: Fight against hypochondria
-    end
-    Note right of John: Rational thoughts!
-    John-->>Alice: Great!
-    John->>Bob: How about you?
-    Bob-->>John: Jolly good!
-    ```
+    ``mermaid     sequenceDiagram     Alice->>John: Hello John, how are you?     loop Healthcheck         John->>John: Fight against hypochondria     end     Note right of John: Rational thoughts!     John-->>Alice: Great!     John->>Bob: How about you?     Bob-->>John: Jolly good!     ``
 
 renders as
 
@@ -125,22 +101,7 @@ Bob-->>John: Jolly good!
 
 An example **class diagram**:
 
-    ```mermaid
-    classDiagram
-    Class01 <|-- AveryLongClass : Cool
-    Class03 *-- Class04
-    Class05 o-- Class06
-    Class07 .. Class08
-    Class09 --> C2 : Where am i?
-    Class09 --* C3
-    Class09 --|> Class07
-    Class07 : equals()
-    Class07 : Object[] elementData
-    Class01 : size()
-    Class01 : int chimp
-    Class01 : int gorilla
-    Class08 <--> C2: Cool label
-    ```
+    ``mermaid     classDiagram     Class01 <|-- AveryLongClass : Cool     Class03 *-- Class04     Class05 o-- Class06     Class07 .. Class08     Class09 --> C2 : Where am i?     Class09 --* C3     Class09 --|> Class07     Class07 : equals()     Class07 : Object[] elementData     Class01 : size()     Class01 : int chimp     Class01 : int gorilla     Class08 <--> C2: Cool label     ``
 
 renders as
 
@@ -163,15 +124,7 @@ Class08 <--> C2: Cool label
 
 An example **state diagram**:
 
-    ```mermaid
-    stateDiagram
-    [*] --> Still
-    Still --> [*]
-    Still --> Moving
-    Moving --> Still
-    Moving --> Crash
-    Crash --> [*]
-    ```
+    ``mermaid     stateDiagram     [*] --> Still     Still --> [*]     Still --> Moving     Moving --> Still     Moving --> Crash     Crash --> [*]     ``
 
 renders as
 
